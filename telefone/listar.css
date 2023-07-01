@@ -1,0 +1,31 @@
+body
+{
+    background-image: url(fundo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%; /*largura*/
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;  
+    overflow: hidden;
+}
+.card
+{
+    width: 100%;
+    height: 300px;
+    background-color: pink;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+}
+.coluna
+{
+    border: black;
+    width: 100px;
+    height: 50px;
+}
+.titulo
+{
+    
+}

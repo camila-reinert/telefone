@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="telefone.css">
+
+    <title>telefone</title>
+
+</head>
+<body>
+    
+    <form action="inserir.php" method="post" class="form">
+    <div class="card">
+        <div class="nome">
+            <label>
+                <input class="input" type="text" placeholder="nome" name="nome">
+            </label>  
+        </div>  
+        <div class="email">
+            <label>
+                <input class="input" type="text" placeholder="email" name="email">
+            </label>
+        </div>
+        <div class="telefone">
+            <label>
+                <input class="input" type="number" placeholder="telefone" name="telefone">
+            </label>
+        </div>
+    </div>
+    <div class="botao">
+    <button onclick="mostrar();">
+        <img src="inserir.png" width="20px" >
+        <br>
+        Inserir
+    </button>    
+    <button onclick="mostrar();">
+        <img src="alterar.png" width="20px" >
+        <br>
+        Alterar
+    </button>      
+    <button onclick="mostrar();">
+        <img src="listar.png" width="20px" >
+        <br>
+        Listar
+    </button>   
+    <button onclick="mostrar();">
+        <img src="excluir.png" width="20px" height="19px">
+        <br>
+        Excluir
+    </button>
+    </div>
+</form>
+</body>
+
+<script>
+    function Excluir()
+    {
+        T = telefone.value
+        window.open("excluir.php?M="+T,"_self")
+    }
+
+</script>
+
+
+</html>
